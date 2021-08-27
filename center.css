@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+   
+}
+.stick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    z-index: 7;
+    margin-top: -100px;
+    position: fixed;
+    background: rgb(248, 248, 248);
+    
+}
+.dona{
+    font-size: 15px;
+    color: rgb(2, 61, 22);
+    position: absolute;
+}
+.cart{
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.image{
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.918)),url("./hapi.PNG");
+  border-radius: 10px;
+    overflow: hidden;
+    opacity: 1;
+   
+}
+
+.image img{
+width: 50%;
+height: 100%;
+float: right;
+object-fit: cover;
+}
+.image .doyo{
+    color: rgba(245, 222, 179, 0.596);
+    width: 40%;
+    position: absolute;
+    left: 5%;
+    text-align: start;
+    font-family: monospace;
+    font-weight: bold;
+    top: 50px;
+}
+
+.container{
+    width: 90%;
+    position: relative;
+    height: 599px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+}
+.points{
+    position: absolute;
+    z-index: 8;
+    top: -38px;
+    color: rgb(5, 112, 39);
+}
+.pease{
+    z-index: 8;
+    color: rgb(2, 59, 20);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 230px;
+}
+.container .unor{
+    width: 100%;
+    position: absolute;
+    top: 270px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.788);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+}
+.modal div{
+    width: 50%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+.dunk{
+    color: rgb(2, 49, 2);
+    font-size: 15px;
+    margin: 10px;
+}
+.cat{
+    margin-left: -10px;
+    margin-top: 17px;
+}
+
+.unor li{
+    width: 45%;
+    height: 150px;
+    background: rgba(106, 236, 67, 0.705);
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.pint{
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50);
+    top: 20px;
+}
+li h1{
+    color:rgb(2, 59, 20) ;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    top: 60px;
+    text-transform: capitalize;
+}
+li h2{
+    color:rgb(2, 59, 20) ;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    bottom: 20px;
+}
+.tono{
+    color:rgb(2, 59, 20) ;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    font-size: 15px;
+}
+.line{
+    position: absolute;
+    color:rgb(2, 59, 20) ;
+    bottom: 20px;
+    left: 3%;
+}
+.numb{
+    color:rgb(2, 59, 20) ;
+    position: absolute;
+    bottom: 20px;
+    font-size: 15px;
+    left: 30%;
+    font-family: monospace;
+}
+@media(max-width:450px){
+    .numb{
+        font-size: 13px;
+        left: 50%;
+    }
+    .tono{
+        font-size: 12px;
+        top: 50px;
+    }
+    .dunk{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .modal div{
+        width: 70%;
+        height: 20%;
+    }
+    li h1{
+        font-size: 12px;
+    }
+    li h2{
+        font-size: 11px;
+    }
+    .pint{
+        left: 40%;
+    transform: translateX(-50);
+    top: 10px;
+    }
+    .pease{
+        top: 150px;
+    }
+    .image .doyo{
+        font-size: 11px;
+        top: 10px;
+        width: 47%;
+        left: 1%;
+    }
+    .points{
+        font-size: 18px;
+        top: -25px;
+    }
+    .container .unor{
+        top: 170px;
+    }
+
+    .image{
+        height: 20vh;
+    }
+}

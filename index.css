@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: monospace;
+    
+}
+.intro{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(1, 24, 8),rgb(2, 61, 22));
+    position: fixed;
+    overflow: hidden;
+}
+
+.intro h6{
+    color: rgba(247, 243, 243, 0.774);
+    
+    font-size: 15px;
+    font-weight: light;
+}
+.cart{
+   margin: 5px;
+   margin-top: 16px;
+}
+.intro h2{
+    position: absolute;
+    color: white;
+    bottom: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.desc{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.822),rgba(0, 0, 0, 0.712)),url("./girl.png");
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.699);
+    display: flex;
+    
+    
+}
+.desc h1{
+    margin: 50px;
+    font-size: 16px;
+}
+.desc .cart{
+    margin-top: 60px;
+    margin-left: -50px;
+}
+.welcome{
+    position: absolute;
+    top: 150px;
+    left: 25%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(219, 219, 218);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s;
+}
+.donation{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .5s;
+}
+.center{
+    position: absolute;
+    left: 35%;
+    transform: translateX(-50%);
+    top: 300px;
+    background-color:rgb(2, 61, 22) ;
+    border: none;
+    padding: 5px 10px;
+    width: 30%;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 1s;
+}
+.show{
+    z-index: 2;
+}
+.opp{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 350px;
+    border: 2px solid rgba(245, 222, 179, 0.678);
+    padding: 5px 10px;
+    width: 30%;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+@media (max-width:450px){
+    .contact{
+        top: 550px;
+        width: 80%;
+        padding: 10px;
+    }
+    .center{
+        top: 470px;
+        width: 80%;
+        padding: 10px;
+        left: 10%;
+    }
+    .donation{
+        top: 300px;
+        width: 100%;
+    }
+    .welcome{
+        font-size: 20px;
+        width: 100%;
+        top: 250px;
+        left: 0;
+    }
+    .desc{
+        background-position-x: -450px;
+        
+    }
+    .desc h1{
+        margin-top: 100px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .desc .cart{
+        margin-top: 110px;
+        margin-left: -90px;
+    }
+}
