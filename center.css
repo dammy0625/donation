@@ -119,8 +119,8 @@ object-fit: cover;
 }
 
 .unor li{
-    width: 45%;
-    height: 150px;
+    width: 30%;
+    height: 80px;
     background: rgba(106, 236, 67, 0.705);
     margin-top: 20px;
     border-radius: 10px;
@@ -140,7 +140,7 @@ li h1{
     text-align: center;
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
-    top: 60px;
+    top: 10px;
     text-transform: capitalize;
 }
 li h2{
@@ -150,7 +150,7 @@ li h2{
     text-align: center;
     font-size: 13px;
     font-family: 'Courier New', Courier, monospace;
-    bottom: 20px;
+    bottom: 10px;
 }
 .tono{
     color:rgb(2, 59, 20) ;
@@ -177,13 +177,17 @@ li h2{
     font-family: monospace;
 }
 @media(max-width:450px){
+    .unor li{
+        width: 48%;
+        height: 70px;
+    }
     .numb{
         font-size: 13px;
         left: 50%;
     }
     .tono{
-        font-size: 12px;
-        top: 50px;
+        font-size: 14px;
+        top: 60px;
     }
     .dunk{
         font-size: 12px;
@@ -205,7 +209,7 @@ li h2{
     top: 10px;
     }
     .pease{
-        top: 150px;
+        top: 170px;
     }
     .image .doyo{
         font-size: 11px;
@@ -218,7 +222,7 @@ li h2{
         top: -25px;
     }
     .container .unor{
-        top: 170px;
+        top: 190px;
     }
 
     .image{

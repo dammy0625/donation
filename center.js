@@ -12,7 +12,7 @@ window.onload=()=>{
 lis.forEach((li)=>{
 li.onclick=()=>{
     modal.style.cssText = "display:flex;"
-    line.innerText = li.childNodes[2].textContent
+    line.innerText = li.childNodes[1].textContent
 
     if(li.childNodes[2].textContent === "ago palace way"){
 number.innerText = '09050693876'
